@@ -14,7 +14,9 @@
     <div class="content content-full">
         <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center">
             <h1 class="flex-sm-fill h3 my-2">
-                DataTables <small class="d-block d-sm-inline-block mt-2 mt-sm-0 font-size-base font-w400 text-muted">Tables transformed with dynamic features.</small>
+                DataTables <small
+                    class="d-block d-sm-inline-block mt-2 mt-sm-0 font-size-base font-w400 text-muted">Tables
+                    transformed with dynamic features.</small>
             </h1>
             <nav class="flex-sm-00-auto ml-sm-3" aria-label="breadcrumb">
                 <ol class="breadcrumb breadcrumb-alt">
@@ -25,7 +27,7 @@
                 </ol>
             </nav>
         </div>
-   </div>
+    </div>
 </div>
 <!-- END Hero -->
 
@@ -55,7 +57,7 @@
                         <td class="font-w600 font-size-sm">
                             <a href="be_pages_generic_blank.php"><?php $one->get_name(); ?></a>
                         </td>
-                        <td class="d-none d-sm-table-cell font-size-sm">
+                        <td class="d-none d-sm-table-cell font-size-sm contoh">
                             client<?php echo $i; ?><em class="text-muted">@example.com</em>
                         </td>
                         <td class="d-none d-sm-table-cell">
@@ -207,5 +209,11 @@
 
 <!-- Page JS Code -->
 <?php $one->get_js('js/pages/be_tables_datatables.min.js'); ?>
+
+<script>
+let edit_prodi = $('.contoh');
+
+console.log(edit_prodi.length);
+</script>
 
 <?php require 'inc/_global/views/footer_end.php'; ?>
